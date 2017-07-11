@@ -19,6 +19,9 @@ This application reads RSS feeds.
 
 ### Sources
 1. Udacity Feed Reader App: https://github.com/udacity/frontend-nanodegree-feedreader
+
 1. Handlebars JS: http://handlebarsjs.com/
+
 1. Google Feed API: https://developers.google.com/feed/?hl=en
+
 1. Jasmine: http://jasmine.github.io/
