@@ -18,10 +18,7 @@ This application reads RSS feeds.
 1. The application will automatically run the Jasmine tests and the results will be printed at the bottom of the page.
 
 ### Sources
-1. Udacity Feed Reader App: https://github.com/udacity/frontend-nanodegree-feedreader
-
-1. Handlebars JS: http://handlebarsjs.com/
-
-1. Google Feed API: https://developers.google.com/feed/?hl=en
-
-1. Jasmine: http://jasmine.github.io/
+* Udacity Feed Reader App: https://github.com/udacity/frontend-nanodegree-feedreader
+* Handlebars JS: http://handlebarsjs.com/
+* Google Feed API: https://developers.google.com/feed/?hl=en
+* Jasmine: http://jasmine.github.io/
