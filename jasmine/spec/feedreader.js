@@ -100,7 +100,7 @@ $(function() {
          */
          it('changes the feed html', function(done) {
             loadFeed(0);
-            expect($('.feed').html()).not.toEqual(feedContents);
+            expect($('.feed').html()).not.toEqual(allFeeds);
             done();
         });
      });
