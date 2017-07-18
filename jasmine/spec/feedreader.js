@@ -62,7 +62,7 @@ $(function() {
         */
         var body = document.body;
         it('the menu element is hidden by default', function(){
-             expect($("body").hasClass('menu-hidden')).toBeTruthy();
+            expect($("body").hasClass('menu-hidden')).toBeTruthy();
             //expect($("body").hasClass('menu-hidden')).toBe(true);
             //with using document.body.className, assigning "menu-hidden" not the actually body object
         });
@@ -74,11 +74,10 @@ $(function() {
         */
         it('shows when menu icon is clicked', function(){
             $(".menu-icon-link").trigger('click');//changes visibility when the menu icon is clicked
-            expect(body.className).not.toBe('menu-hidden');//the menu display when clicked, "menu-hidden" class removed
-
+            expect($('body').hasClass('menu-hidden')).toBe(false);
             //hide when clicked again, "menu-hidden" class is added back onto the element
             $('.menu-icon-link').trigger('click');
-            expect(body.className).toBe('menu-hidden');
+            expect($('body').hasClass('menu-hidden')).toBe(true);
         });
     });
 
@@ -108,10 +107,9 @@ $(function() {
         * Remember, loadFeed() is asynchronous.
         */
         describe('New Feed Selection', function() {
-            var oldFeed,
-            newFeed;
+            var oldFeed;
 
-            beforeEach(function(done) {
+            beforeEach(function(done){
                 loadFeed(1, function() {
                     oldFeed = $('.feed').html();
                     done();
